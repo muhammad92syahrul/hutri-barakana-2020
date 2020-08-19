@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+  <link rel="icon" type="image/png" href="assets/img/ind.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <title>Qurban Barakana 2020</title>
+  <title>HUT RI Barakana 2020</title>
 
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 
@@ -48,6 +48,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="assets/css/fresh-bootstrap-table.css" rel="stylesheet" />
   <link href="assets/css/demo.css" rel="stylesheet" />
+  <style>
+    .header {
+  padding: 30px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+  </style>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
@@ -80,9 +89,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
+        <div class="header">
+          <h1>Laporan Pemasukan & Pengeluaran <br>HUT RI BARES 2020</h1>
+          <p>Tanggal Update: 19 Agustus 2020 (data tidak realtime)</p>
+        </div>
         <div class="description">
-          <h2>Laporan Pemasukan & Pengeluaran Qurban Barakana 2020 </h2>
-          <h4>Tanggal Update: 1 Agustus 2020 (data tidak realtime)</h4>
+          <!-- <h2> </h2>
+          <h4></h4> -->
+          <a class="btn btn-success" href="lpj_hutri_bares_2020.xlsx"><img src="xls.png" width="20" height="20"> Unduh Laporan Xls</a>
         </div>
 
         <div class="fresh-table full-color-green">
@@ -98,6 +112,7 @@
             <thead>
               <th data-field="id">ID</th>
               <th data-field="name" data-sortable="true">Nama Pemasukan</th>
+              <th data-field="satuan" data-sortable="true">Satuan</th>
               <th data-field="salary" data-sortable="true">Biaya</th>
               <!-- <th data-field="country" data-sortable="true">Country</th>
               <th data-field="city">City</th>
@@ -105,25 +120,17 @@
             </thead>
             <tbody>
               <tr>
-                <td>1</td>
-                <td>Swadaya Barakana (31 org @50k)</td>
-                <td  class="text-right">IDR 1.550.000,00 </td>
+                <td><span>&#8226;</span></td>
+                <td>Swadaya Barakana </td>
+                <td>30 @ 50k</td>
+                <td  class="text-right">IDR 1.500.000,00 </td>
               </tr>
             
+             
+              
               <tr>
-                <td>2</td>
-                <td>Jual Kepala/Kaki (Pak Rizal)</td>
-                <td class="text-right">  IDR 200.000,00 </td>
-               
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Uang Mudhohi (3 Sapi @500k + 7 Kambing @200k)</td>
-                <td class="text-right"> IDR 2.900.000,00 </td>    
-              </tr>
-              <tr>
-                <td class="text-center" colspan="2">TOTAL</td>
-                <td class="text-right">  IDR 4.650.000,00  </td>    
+                <td class="text-center" colspan="3">TOTAL</td>
+                <td class="text-right">  IDR 1.500.000,00  </td>    
               </tr>
 
              
@@ -131,7 +138,7 @@
           </table>
         </div>
 
-        <div class="fresh-table full-color-orange">
+        <div class="fresh-table full-color-azure">
           <!--
             Available colors for the full background: full-color-blue, full-color-azure, full-color-green, full-color-red, full-color-orange
             Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-green, toolbar-color-red, toolbar-color-orange
@@ -144,6 +151,7 @@
               <thead>
                 <th data-field="id">ID</th>
                 <th data-field="name" data-sortable="true">Nama Pengeluaran</th>
+                <th data-field="satuan" data-sortable="true">Satuan</th>
                 <th data-field="salary" data-sortable="true">Biaya</th>
                 <!-- <th data-field="country" data-sortable="true">Country</th>
                 <th data-field="city">City</th>
@@ -151,73 +159,248 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>1</td>
-                  <td>Terpal 5x7 @3 + kawat putih @0.5</td>
-                  <td  class="text-right"> IDR 600.000,00  </td>
+                  <td></td>
+                  <td class="text-left" colspan="2"><strong><u>Pak Jaka :</u></strong> </td>
+                  <td class="text-right">    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Belut</td>
+                  <td>@</td>
+                  <td  class="text-right"> IDR 50.000,00  </td>
                 </tr>
               
                 <tr>
-                  <td>2</td>
-                  <td>Belanjaan Pak Rizal (via Pak Dias)</td>
-                  <td class="text-right">    IDR 450.000,00   </td>
+                  <td>&#8226;</td>
+                  <td>Sendok Plastik</td>
+                  <td>@</td>
+                  <td class="text-right">    IDR 14.000,00   </td>
                  
                 </tr>
                 <tr>
-                  <td>3</td>
-                  <td>Terpal 5x7 @1</td>
-                  <td class="text-right">  IDR 200.000,00  </td>    
+                  <td>&#8226;</td>
+                  <td>Tepung</td>
+                  <td>@</td>
+                  <td class="text-right">  IDR 8.000,00  </td>    
                 </tr>
                 <tr>
-                  <td>4</td>
-                  <td>Upah Pak Amil</td>
-                  <td class="text-right">   IDR 800.000,00  </td>    
+                  <td>&#8226;</td>
+                  <td>Transport</td>
+                  <td></td>
+                  <td class="text-right">   IDR 6.000,00  </td>    
+                </tr>
+
+                <tr>
+                  <td></td>
+                  <td class="text-left" colspan="2"><strong><u>Pak Fachri :</u></strong> </td>
+                  <td class="text-right">    </td>    
+                </tr>
+
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Hadiah Anak-anak</td>
+                  <td>@</td>
+                  <td class="text-right">   IDR 225.000,00   </td>    
                 </tr>
                 <tr>
-                  <td>5</td>
-                  <td>Mangkuk sup</td>
+                  <td>&#8226;</td>
+                  <td>Bendera dan tali</td>
+                  <td>@</td>
                   <td class="text-right">   IDR 100.000,00   </td>    
                 </tr>
                 <tr>
-                  <td>6</td>
-                  <td>Pisau cutter + spidol</td>
-                  <td class="text-right">   IDR 68.000,00   </td>    
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Konsumsi nasi padang</td>
-                  <td class="text-right">    IDR 550.000,00    </td>    
+                  <td>&#8226;</td>
+                  <td>Bola,karung dan alat2 lomba</td>
+                  <td>@</td>
+                  <td class="text-right">    IDR 150.000,00    </td>    
                 </tr>
 
                 <tr>
-                  <td>8</td>
-                  <td>Kopi + rokok untuk tukang</td>
-                  <td class="text-right">    IDR 200.000,00    </td>    
+                  <td></td>
+                  <td class="text-left" colspan="2"><strong><u>Pak Ajie :</u></strong> </td>
+                  <td class="text-right">    </td>    
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="text-left" colspan="2">Belanja 1</strong> </td>
+                  <td class="text-left">  <a target="_blank" href="bukti1.jpeg"> <img src="jpg.png" width="20" height="20"> <u>(Lihat Bukti 1)</u> </a> </td>    
+                </tr>
+
+
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Kertas kopi isi 10</td>
+                  <td>12k @ 2</td>
+                  <td class="text-right">    IDR 24.000,00    </td>    
                 </tr>
                 
                 <tr>
-                  <td>9</td>
-                  <td>Konsumsi snack</td>
-                  <td class="text-right">    IDR 250.000,00   </td>    
+                  <td>&#8226;</td>
+                  <td>Panfix isolasi 1/2x36</td>
+                  <td>9k @ 3</td>
+                  <td class="text-right">    IDR 27.000,00   </td>    
                 </tr>
                 <tr>
-                  <td>10</td>
-                  <td>Belanjaan Pak Fachri (via Pak Dias)</td>
-                  <td class="text-right">    IDR 700.000,00    </td>    
+                  <td>&#8226;</td>
+                  <td>Artline spidol ek-500 black</td>
+                  <td>10k @ 1</td>
+                  <td class="text-right">    IDR 10.000,00    </td>    
+                </tr>
+                <!-- <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="text-right"> </td>    
+                </tr> -->
+
+                <tr>
+                  <td></td>
+                  <td class="text-left" colspan="2">Belanja 2</strong> </td>
+                  <td class="text-left">  <a target="_blank" href="bukti2.jpeg"> <img src="jpg.png" width="20" height="20"> <u>(Lihat Bukti 2)</u> </a> </td>    
                 </tr>
                 <tr>
-                  <td>11</td>
-                  <td>Uang jaga sapi</td>
-                  <td class="text-right">     IDR 200.000,00    </td>    
+                  <td>&#8226;</td>
+                  <td>Mug pineapple</td>
+                  <td>@ 1</td>
+                  <td class="text-right">     IDR 12.500,00    </td>    
                 </tr>
                 <tr>
-                  <td>12</td>
-                  <td>Uang spanduk + pisau</td>
-                  <td class="text-right">     IDR 400.000,00    </td>    
+                  <td>&#8226;</td>
+                  <td>Ocean mug beer 357ml</td>
+                  <td>@ 1</td>
+                  <td class="text-right">     IDR 35.000,00    </td>    
                 </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Botol kaca warna tw-261z</td>
+                  <td>@ 1</td>
+                  <td class="text-right">     IDR 20.000,00    </td>    
+                </tr>
+                <!-- <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="text-right"> </td>    
+                </tr> -->
+
+                <tr>
+                  <td></td>
+                  <td class="text-left" colspan="2">Belanja 3</strong> </td>
+                  <td class="text-left">  <a target="_blank" href="bukti3.jpeg"> <img src="jpg.png" width="20" height="20"> <u>(Lihat Bukti 3)</u> </a> </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Mie enak</td>
+                  <td>@ 3</td>
+                  <td class="text-right">     IDR 27.000,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Koro/ tango</td>
+                  <td>@ 3</td>
+                  <td class="text-right">     IDR 27.000,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Roma kelapa/nabati</td>
+                  <td>@ 3</td>
+                  <td class="text-right">     IDR 54.000,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Beng beng</td>
+                  <td>@ 1</td>
+                  <td class="text-right">     IDR 27.000,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Superstar</td>
+                  <td>@ 2</td>
+                  <td class="text-right">     IDR 32.000,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>K.t. susu</td>
+                  <td>@ 2</td>
+                  <td class="text-right">     IDR 20.000,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>K api mix</td>
+                  <td>@ 2</td>
+                  <td class="text-right">     IDR 22.000,00    </td>    
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="text-left" colspan="2">Belanja 4</strong> </td>
+                  <td class="text-left">  <a target="_blank" href="bukti4.jpeg"> <img src="jpg.png" width="20" height="20"> <u>(Lihat Bukti 4)</u> </a> </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Tidak terbaca</td>
+                  <td>@ 1</td>
+                  <td class="text-right">     IDR 17.000,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Tidak terbaca</td>
+                  <td>@ 1</td>
+                  <td class="text-right">     IDR 17.000,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Energen</td>
+                  <td>@ 1</td>
+                  <td class="text-right">     IDR 12.000,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Pilus</td>
+                  <td>@ 1</td>
+                  <td class="text-right">     IDR 6.500,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Koroko</td>
+                  <td>@ 2</td>
+                  <td class="text-right">     IDR 17.000,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Tidak terbaca</td>
+                  <td>@ 2</td>
+                  <td class="text-right">     IDR 17.000,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Keju Susu</td>
+                  <td>@ 2</td>
+                  <td class="text-right">     IDR 17.000,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Superstar</td>
+                  <td>@ 1</td>
+                  <td class="text-right">     IDR 16.500,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Sukro</td>
+                  <td>@ 1</td>
+                  <td class="text-right">     IDR 17.000,00    </td>    
+                </tr>
+                <tr>
+                  <td>&#8226;</td>
+                  <td>Transport</td>
+                  <td></td>
+                  <td class="text-right">     IDR 20.500,00    </td>    
+                </tr>
+
+
 
                 <tr>
                   <td class="text-center" colspan="2">TOTAL</td>
-                  <td class="text-right">  IDR 4.518.000,00  </td>    
+                  <td class="text-right">  IDR 1.048.000,00  </td>    
                 </tr>
   
                
@@ -226,7 +409,7 @@
           </div>
 
         <div class="description description-footer">
-          <h2>SALDO = IDR 132.000,00</h2>
+          <h2>SALDO = IDR 452.000,00</h2>
           <!-- <div class="well">
             SALDO= RP 2000.000
           </div> -->
@@ -235,7 +418,7 @@
           <button id="facebook" class="btn btn-info btn-social btn-facebook btn-round btn-fill btn-wd"><i class="fa fa-facebook-square"></i></button> -->
 
 
-          <p>Copyright &copy; 2020 <a href="http://creative-tim.com">Creative Tim</a>, made with <i class="fa fa-heart ct-heart"></i> for a better web.</p>
+          <p class="text-success">Warga Barakana Residence 2020</p>
         </div>
       </div>
     </div>
@@ -364,7 +547,7 @@
         showRefresh: true,
         showToggle: true,
         showColumns: true,
-        pagination: true,
+        pagination: false,
         striped: true,
         sortable: true,
         pageSize: 8,
@@ -386,7 +569,7 @@
         showRefresh: true,
         showToggle: true,
         showColumns: true,
-        pagination: true,
+        pagination: false,
         striped: true,
         sortable: true,
         pageSize:25,
@@ -400,9 +583,9 @@
         }
       })
 
-      $alertBtn.click(function () {
-        alert('You pressed on Alert')
-      })
+      // $alertBtn.click(function () {
+      //   alert('You pressed on Alert')
+      // })
     })
 
     $('#sharrreTitle').sharrre({
@@ -450,15 +633,6 @@
     })
   </script>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga')
-
-    ga('create', 'UA-46172202-1', 'auto')
-    ga('send', 'pageview')
-
-  </script>
+ 
 
 </html>
